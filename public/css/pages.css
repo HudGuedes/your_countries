@@ -1,0 +1,114 @@
+/* Login/Register Page */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.user-email {
+  margin-right: var(--spacing-sm);
+  font-weight: 500;
+}
+
+/* Search */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.page-info {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Detail Page */
+.detail-card {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-flag {
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.detail-card h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.detail-card p {
+  margin-bottom: var(--spacing-sm);
+  font-size: 16px;
+}
+
+/* Form Page */
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-card {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-card h2 {
+  margin-bottom: var(--spacing-md);
+}

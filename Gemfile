@@ -28,6 +28,10 @@ gem 'sdoc', '~> 0.4.0', :group => :doc
 
 gem 'devise', '~> 3.5.10'
 
+gem 'httparty', '~> 0.13.7'
+
+gem 'kaminari', '~> 0.17.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

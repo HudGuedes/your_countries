@@ -1,40 +1,91 @@
-<h1>Seus Países</h1>
+# Seus Países
 
-Esse é um pequeno projeto para conhecer os países, mostrando as informações sobre o país escolhido ou crie o seu país.
+Esse é um pequeno projeto para conhecer os países, mostrando as informações sobre o país escolhido ou criando o seu próprio país customizado.
 
-<h1>Tecnologias utilizadas;</h1>
+## Tecnologias utilizadas
 
 - Ruby 2.6.9
 - Rails 4.2.11
 - MySQL
 - React
 
-<h2>Bibliotecas utilizadas;</h2>
+## Bibliotecas utilizadas
 
 - devise
 - httparty
 - kaminari
 
-<h2>Modo de utilizar;</h2>
+## Como utilizar
 
-- Clone este repositório para sua máquina.
-- Abre o prompt e entre no diretório deste repositório, execute o comando `bundle install` para instalar as dependências do back.
-- Configure o arquivo database.yml e coloque as credenciais do seu banco MySQL.
-- No prompt execute os comandos: `rails db:create` e `rails db:migrate`.
-- Ainda no prompt execute yarn install ou npm install para instalar as dependências do front.
-- Para subir o projeto, no prompt execute o seguinte comando: `rails s`
-- No browser conecte pelo link http://localhost:3000/.
+- Clone este repositório para sua máquina
+- Entre no diretório do projeto
+- Execute:
 
-<h4>EM TELA</h4>
+```bash
+bundle install
+```
 
-- Primeiro passo é criar uma nova conta, clique em "Criar conta"
-- Coloque um e-mail válido e uma senha de no mínimo 8 digitos e clique em "Salvar"
-- Logo após você será direcionado para a tela principal, lá você poderá ver todos os países.
-- Você pode clicar em algum país da tela ou até mesmo pesquisar e então clicar em detalhes.
-- Após clicar em detalhes você verá todas as informações do país que você escolheu.
-- No canto superior direito, você verá o email do usuário logado, os botões de +Criar País, de Editar Conta e de Sair.
-- No botão de +Criar País você poderá criar um País customizado, basta preencher os dados corretamente e clicar em Salvar e será redirecionado para tela principal, onde você pode pesquisar pelo seu país criado ou navegar as páginas.
-- No botão de Editar Conta você pode editar seu email e sua senha.
-- No botão de Sair você encerra sessão e voltará para a tela de login.
+- Configure o `database.yml` com as credenciais do MySQL
+- Execute:
 
-E esse é o projeto Seus Países, dúvidas ou para maiores informações, entre em contato!
+```bash
+rails db:create
+rails db:migrate
+```
+
+- Instale as dependências do frontend:
+
+```bash
+yarn install
+```
+
+ou
+
+```bash
+npm install
+```
+
+- Para iniciar o projeto:
+
+```bash
+rails s
+```
+
+- Acesse no navegador:
+
+```txt
+http://localhost:3000
+```
+
+## Funcionalidades
+
+- Criar conta
+- Login/logout
+- Listagem de países
+- Busca de países
+- Visualização de detalhes
+- Criação de países customizados
+- Edição de conta
+- Paginação server-side
+
+## Fluxo da aplicação
+
+- Primeiro crie uma conta clicando em "Criar conta"
+- Faça login com email e senha
+- Visualize os países disponíveis
+- Pesquise países pelo nome
+- Veja detalhes de cada país
+- Crie países customizados
+- Edite sua conta
+- Encerre a sessão pelo botão de sair
+
+## Arquitetura
+
+Frontend:
+- React
+
+Backend:
+- Ruby on Rails API
+
+Integrações:
+- RestCountries API
